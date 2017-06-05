@@ -1,0 +1,34 @@
+extends ../includes/layout.pug
+include ../includes/components/picture.pug
+include ../includes/components/picture_webp.pug
+include ../includes/components/youtube_video.pug
+block metatags
+  -var title = 'Practicando con Pug y Sass'
+  -var description = 'Entendiendo los conceptos basicos de Pug y Sass'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  //Cometario HTML
+  //-Comentario Pug
+  h1.title#title Encabezado de tipo 1
+  h2.sub-title= title
+  -var estaciones = [ 'Primavera', 'Verano', 'Otoño', 'Invierno' ]
+  ul
+    each item in estaciones
+      li= item
+  //-interpolación de contenido, etiquetas y variable
+  p.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate hic earum non ipsum assumenda omnis doloribus maxime aspernatur dicta iure temporibus dolorem sapiente, quibusdam recusandae ea perferendis, modi rerum?
+    #[b.bold(title="titulo") #{description}]
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, velit facilis maxime eaque saepe sequi nemo! Doloribus, assumenda numquam quisquam eligendi sapiente velit magnam voluptatibus quae tempora quos rem possimus.
+  -var session = true
+  if ( session )
+    p
+      mark Estás conectado
+  else
+    p
+      mark No Estás conectado
+  script.
+    let nombre = 'Jonathan'
+    //alert(`Hola ${nombre}`)

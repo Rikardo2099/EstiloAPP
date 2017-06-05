@@ -1,0 +1,26 @@
+extends ../includes/layout.pug
+include ../includes/components/picture.pug
+include ../includes/components/picture_webp.pug
+include ../includes/components/youtube_video.pug
+block metatags
+  -var title = 'Practicando con Pug y Sass'
+  -var description = 'Entendiendo los conceptos basicos de Pug y Sass'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  article.PresentationCard
+    figure.PresentationCard-container
+      img.PresentationCard-image(src="http://bextlan.com/img/jonmircha.jpg")
+      figcaption.PresentationCard-data
+        h2.PresentationCard-name
+          i.fa.fa-user
+          span Jonathan MirCha
+          br
+          span Frontend Architect
+        p.PresentationCard-socialMedia
+          -var sm = [ ['twitter', 'https://twitter.com/jonmircha'], ['github', 'https://github.com/jonmircha'], ['codepen', 'https://codepen.io/jonmircha/'] ]
+          each item in sm
+            a.PresentationCard-link(href=`${item[1]}`, target="_blank")
+              i(class=`fa fa-${item[0]}`)
+

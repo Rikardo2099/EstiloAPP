@@ -1,0 +1,59 @@
+$bg-color: #222;
+$font-color: #FF5700;
+$link-color: #FFF;
+
+.PresentationCard {
+  background-color: $bg-color;
+  color: $font-color;
+  margin: auto;
+  max-width: 1200px;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width: 64em) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    height: auto;
+    align-self: flex-start;
+    border-radius: 50%;
+
+    @media screen and (min-width: 64em) {
+      max-width: 30%;
+      margin-right: 10%;
+    }
+  }
+
+  &-data > * {
+    margin-bottom: 1rem;
+  }
+
+  &-name {
+
+  }
+
+  &-socialMedia {
+
+  }
+
+  &-link {
+    padding: 1rem;
+    font: {
+      size: 3rem;
+      weight: bold;
+    }
+    color: $link-color;
+    transition: all .3s ease-in;
+
+    &:hover { color: $font-color; }
+  }
+}
