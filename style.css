@@ -1,0 +1,431 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: bebas;
+    src: url(fonts/BebasNeueRegular.otf);
+}
+@font-face{
+    font-family: bebaslight;
+    src: url(fonts/BebasNeueLight.otf);
+}
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix{ clear: both; }
+
+.opacity{ opacity: .5; }
+
+body{
+    max-width: 767px;
+    margin: auto;
+}
+h1,h2,h3,h4,h5{
+    font-family: bebaslight;
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding: 40px 0px;
+}
+a{
+    text-decoration: none;
+}
+video{
+    width: 100%;
+}
+.black{
+    background: rgba(51,51,51,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(51,51,51,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(ellipse at center, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000', GradientType=1 );
+}
+.grey{
+    background: rgba(255,255,255,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(219,219,219,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb', GradientType=1 );
+}
+.green{
+    background: rgba(0,125,132,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,125,132,1) 0%, rgba(1,49,64,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,125,132,1)), color-stop(100%, rgba(1,49,64,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,125,132,1) 0%, rgba(1,49,64,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(0,125,132,1) 0%, rgba(1,49,64,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(0,125,132,1) 0%, rgba(1,49,64,1) 100%);
+background: radial-gradient(ellipse at center, rgba(0,125,132,1) 0%, rgba(1,49,64,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007d84', endColorstr='#013140', GradientType=1 );
+}
+.red{
+    background: rgba(104,14,24,1);
+background: -moz-linear-gradient(top, rgba(104,14,24,1) 0%, rgba(136,25,29,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(104,14,24,1)), color-stop(100%, rgba(136,25,29,1)));
+background: -webkit-linear-gradient(top, rgba(104,14,24,1) 0%, rgba(136,25,29,1) 100%);
+background: -o-linear-gradient(top, rgba(104,14,24,1) 0%, rgba(136,25,29,1) 100%);
+background: -ms-linear-gradient(top, rgba(104,14,24,1) 0%, rgba(136,25,29,1) 100%);
+background: linear-gradient(to bottom, rgba(104,14,24,1) 0%, rgba(136,25,29,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#680e18', endColorstr='#88191d', GradientType=0 );
+}
+img.svg{
+   width: 100%; 
+}
+figure.boxbanner{
+     width: 100%;
+     height: auto;
+     margin: auto;
+    text-align: center;
+ }
+
+figure.boxbanner img{ 
+    width: 100%;
+    max-width: 390px;
+}
+
+section.container{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    height: auto;
+}
+section.container h1{
+    font-family: bebas;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 15px 0 10px;
+}
+section.videos{
+    width: 100%;
+    height: auto;
+}
+section.videos iframe{
+    width: 100%;
+}
+section.secciones{
+    width: 100%;
+    text-align: center;
+}
+figure.seccion{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+    border-top: solid 1px white;
+}
+figure.seccion img{
+    width: 100%;
+    max-width: 350px;
+}
+.news{
+    background-image: url(images/seccion-news.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.making{
+    background-image: url(images/seccion-makingof.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.abraza{
+    background-image: url(images/seccionabraza.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.buencomer{
+    background-image: url(images/seccion-buencomer.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.fitness{
+    background-image: url(images/seccion-fitness.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.entrevista{
+    background-image: url(images/seccion-entrevista.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.belleza{
+    background-image: url(images/seccion-belleza.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.viral{
+  background-image: url(images/seccion_viral.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.box{
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: center;
+    position: relative;
+    border: solid 1px grey;
+}
+
+.box img{ width: 100%; }
+
+.caption{
+    width: 100%;
+    height: 20%;
+    max-height: 70px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+}
+figcaption.caption p{
+    font-size: .8em;
+    color: #fff;
+    padding: 1px;
+}
+.boxsection{
+    width: 50%;
+    height: 220px;
+    float: left;
+    position: relative;
+    border-top: solid 2px white;
+}
+
+.boxsection figure{ height: 180px; }
+
+.weekend{
+    background-image: url(images/weekend.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.distribucion{
+    background-image: url(images/distribucion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gradient{
+    background: rgba(0,0,0,0);
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(25%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+}
+section.gradient{ text-align: center;}
+
+.caption2{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+}
+.caption2 h2{
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 13px 0;
+}
+figcaption.caption2 figure{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+figcaption.caption2 figure img{
+    width: 180px;
+    height: auto;
+    padding-top: 10px;
+}
+section.gradient img{
+    width: 100%;
+    max-width: 210px;
+}
+.caption3{
+    width: 100%;
+    height: 70px;
+    background-color: #f16522;
+    position: absolute;
+}
+.caption3 h2{
+    font-family: bebas;
+    text-align: center;
+    color: #fff;
+    padding: 8px 15px;
+    line-height: 1.2em;
+}
+aside.ediciones{
+    background-color: #dbdbdb;
+    height: 550px;
+    margin-top: 30px;
+}
+aside.ediciones .container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
+aside.ediciones figure.portada img{
+    width: 100%;
+    height: auto;
+    max-width: 300px
+}
+aside.ediciones .container h2{
+    text-align: center;
+    font-family: bebas;
+    font-size: 1.9em;
+    padding: 30px 0 0;
+}
+aside.ediciones .container h3{
+    text-align: center;
+    font-family: bebas;
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 0;
+    color: #000;
+}
+aside.ediciones .container figure{
+    text-align: center;
+    padding: 20px 0;
+}
+aside.ediciones .container figure img{
+    width: 100%;
+    box-shadow: 0px 2px 5px black; 
+}
+aside.ediciones .container p{
+    text-align: center;
+    font-size: .8em;
+}
+figure.issue-xl{
+    width: 100%;
+    max-width: 720px;
+}
+
+figure.issue-xl img{width: 100%;}
+
+section.container-issues{
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    justify-content: space-around;
+}
+
+figure.issue-s{
+    width: 33%;
+}
+
+figure.issue-s img{ width: 100%}
+
+footer{
+    width: 100%;
+    height: 60px;
+}
+section.container-footer{
+    width: 50%;
+    max-width: 280px;
+    margin: auto;
+    padding: 10px 0 5px;
+    display: flex;
+    justify-content: space-around;
+}
+section.container-nota{
+    width: 95%;
+    margin: auto
+}
+section.container-nota h1.title{
+    text-align: center;
+    color: #f16522;
+    font-family: bebaslight;
+    font-size: 2em;
+    padding: 15px;
+    border-bottom: thin solid grey;
+}
+figure.share{
+    padding: 5px 10px 0px;
+    display: inline-block;
+}
+figure.thumbnail{
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 15px 0px black;
+}
+figure.thumbnail img{
+    width: auto;
+    height: 100%;
+    
+}
+section.container-nota p{
+    line-height: 1.5em;
+    padding: 5px 0;
+    text-align: justify;
+    font-size: .9em;
+}
+section.container-nota img{
+    width: 100%;
+    padding: 10px;
+    
+}
+div.container-coments{
+    width: 100%;
+    height: 350px;
+    border: thin solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h3.section-title{
+    font-family: bebas;
+    font-size: 2.5em;
+    color: #000;
+}
+.boxintro{
+    width: 100%;
+    height: 350px;
+    float: left;
+    position: relative;
+    margin-bottom: 25px;
+}
+.boxintro .gradient{
+    height: 100%;
+}
+.boxintro figure{ height: 350px; }
+
+
+/*********************Media Queries*******************/
+
+
+/*de 320px a 767px / WIDTH*/
+@media (min-width: 320px) and (max-width:767px){
+
+}
+
+
+
+
+
+
