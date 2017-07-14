@@ -1,0 +1,8 @@
+/*** fuentes externas ***/
+@font-face {
+  font-family: bebas;
+  src: url(fonts/BebasNeueRegular.otf); }
+
+@font-face {
+  font-family: bebaslight;
+  src: url(fonts/BebasNeueLight.otf); }

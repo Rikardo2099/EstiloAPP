@@ -1,0 +1,53 @@
+extends ../includes/layout.pug
+extends ../includes/metatags_webapp.pug
+  -var title = 'EstiloDF 2017'
+  -var description = 'Conoce todo nuestro contenido audiovisual'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+body
+  main.container
+    header.black
+      <a href="#nav" class="open  toggle">&#9776;</a>
+      figure
+        <img src="images/logo_estiloDF.svg">
+    <nav id="nav" class="nav">
+      <a href="#" class="close  toggle">&#10006;</a>
+      <ul>
+        <li class="Menu-item"><a href="category-news.html" class="Menu-link">EstiloDF News</a></li>
+        <li class="Menu-item"><a href="category-making.html" class="Menu-link">EstiloDf Making Of</a></li>
+        <li class="Menu-item"><a href="category-belleza.html" class="Menu-link">Belleza</a></li>
+        <li class="Menu-item"><a href="category-abraza.html" class="Menu-link">Abraza México</a></li>
+        <li class="Menu-item"><a href="category-buencomer.html" class="Menu-link">Buen Comer</a></li>
+        <li class="Menu-item"><a href="category-fitness.html" class="Menu-link">Fitness</a></li>
+        <li class="Menu-item"><a href="category-version-digital.html" class="Menu-link">Versión Digital</a></li>
+        <li class="Menu-item"><a href="page-distribucion.html" class="Menu-link">Puntos de Distribución</a></li>
+      </ul>
+    section.VideoPrincipal.black
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NifFU_2ArC0" frameborder="0" allowfullscreen></iframe>
+    section.secciones.black
+        figure.making
+          <img src="images/logo-making.svg">
+        div.container-videos
+          figure.box
+            <img src="images/making01.png">
+          figure.box
+            <img src="images/making02.png">
+          figure.box
+            <img src="images/making03.png">
+          figure.box
+            <img src="images/making04.png">
+          figure.box
+            <img src="images/making05.png">
+          figure.box
+            <img src="images/making06.png">
+    footer.black
+      section.container-footer
+        <a href="#">
+          <img src="images/social_facebook.svg">
+        <a href="#">
+          <img src="images/social_twit.svg">
+        <a href="#">
+          <img src="images/social_instagram.svg">
+        <a href="#">
+          <img src="images/social_youtube.svg">

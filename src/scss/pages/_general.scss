@@ -1,0 +1,148 @@
+h1,h2,h3,h4,h5{
+  font-family: bebas;
+}
+.aux-100{
+  width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, fit-content);
+  grid-template-areas: 
+            'header header'
+            'publicidad publicidad'
+            'VideoPrincipal VideoPrincipal'
+            'secciones secciones'
+            'edicionDigital puntosDistribucion'
+            'revista revista'
+            'footer footer';
+}
+.container-videos{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.box{
+    width: 50%;
+    height: auto;
+    border: solid thin grey;
+
+  & img{
+    width: 100%;
+  }
+}
+header{
+  grid-area: header;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+
+  & img{
+    width: 150px;
+    height: auto;
+  }
+}
+.publicidad{
+  background-color: #000;
+  grid-area: publicidad;
+  text-align: center;
+
+  & img{
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.VideoPrincipal{
+  grid-area: VideoPrincipal;
+  padding: 1.5rem;
+
+  & iframe{
+    width: 100%;
+    margin: auto;
+  }
+}
+.secciones{
+  grid-area: secciones;
+
+  & div.containerSecciones{
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, auto)
+
+    & a{
+
+      & figure{
+        border-top: thin solid #fff;
+        border-bottom: thin solid #fff;
+        padding: 0;
+      }
+    }
+  }
+}
+.edicionDigital{
+  grid-area: edicionDigital;
+  text-align: center;
+  border-top: thin solid #fff;
+  background-image: url(images/weekend.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.puntosDistribucion{
+  grid-area: puntosDistribucion;
+  text-align: center;
+  border-top: thin solid #fff;
+  background-image: url(images/distribucion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+figure.weekend img{
+  max-width: 200px;
+}
+.revista{
+  grid-area: revista;
+}
+section.revista{
+  text-align: center;
+  padding: 1rem;
+}
+figure.portada img{
+  width: 100%;
+  padding: 1rem;
+}
+footer{
+  background-color: dimgrey;
+  grid-area: footer;
+}
+section.container-footer{
+  width: 50%;
+  max-width: 280px;
+  margin: auto;
+  padding: 10px 0 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.caption3{
+  width: 100%;
+  height: 70px;
+  background-color: #f16522;
+
+  $ h2{
+    text-align: center;
+    color: #fff;
+    padding: 8px 15px;
+    line-height: 1.2em;
+  }
+}
+
+
+
+
+

@@ -1,6 +1,6 @@
-# Proyecto para la realización de Web APP para estiloDF
+# Proyecto para la realización de Website de Videos para EstiloDF
 ## HTML 5 y CSS
 ### Link al sitio
-[EstiloDF APP](http://estilodf.tv/app/index.html)
+[EstiloDF](http://estilodf.tv/app/index.html)
 ### APP EstiloDF
 ![Home del Sitio ](http://estilodf.tv/imagenes/home.png "Home")
